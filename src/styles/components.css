@@ -1,0 +1,196 @@
+/* src/styles/components.css */
+/* Blog Card Styles */
+.blog-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .blog-image {
+    position: relative;
+    height: 200px;
+  }
+  
+  .blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .post-category {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #2ecc71;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+  }
+  
+  .blog-card-content {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .blog-card-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .post-meta {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .post-excerpt {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex: 1;
+  }
+  
+  .read-more {
+    color: #2ecc71;
+    font-weight: 600;
+    align-self: flex-start;
+    position: relative;
+    padding-bottom: 2px;
+  }
+  
+  /* src/styles/components.css (continued) */
+.read-more::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2ecc71;
+    transition: width 0.3s ease;
+  }
+  
+  .read-more:hover::after {
+    width: 100%;
+  }
+  
+  /* Dietician Card Styles */
+  .dietician-card {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .dietician-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .dietician-image {
+    width: 30%;
+    min-width: 250px;
+  }
+  
+  .dietician-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .dietician-info {
+    padding: 2rem;
+    flex: 1;
+  }
+  
+  .dietician-info h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .dietician-info h3 {
+    font-size: 1.2rem;
+    color: #2ecc71;
+    margin-bottom: 1rem;
+  }
+  
+  .dietician-info p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .dietician-details {
+    margin-bottom: 1.5rem;
+  }
+  
+  .detail-item {
+    margin-bottom: 0.5rem;
+  }
+  
+  .detail-item .label {
+    font-weight: 600;
+    margin-right: 0.5rem;
+    color: #333;
+  }
+  
+  .certifications {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .certification-badge {
+    background-color: #f0f9f4;
+    color: #2ecc71;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid #2ecc71;
+  }
+  
+  .book-appointment {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-appointment:hover {
+    background-color: #27ae60;
+  }
+  
+  @media (max-width: 768px) {
+    .dietician-card {
+      flex-direction: column;
+    }
+    
+    .dietician-image {
+      width: 100%;
+      min-width: auto;
+      height: 250px;
+    }
+  }
+  
